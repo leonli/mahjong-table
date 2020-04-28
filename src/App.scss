@@ -1,7 +1,16 @@
-.App {
-  text-align: center;
-}
+
+$base-margin: 10px 15px;
 
 body {
   background-color: #30404d;
+}
+
+.breadcrumbs {
+  margin: $base-margin;
+}
+
+.basic-form {
+  margin: $base-margin;
+  margin-top: -10px;
+  width: 400px;
 }

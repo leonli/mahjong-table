@@ -3,9 +3,6 @@ import logo from "./logo.svg";
 import protoLogo from "./AWS-Prototyping_Logo_White.svg";
 //import { useDispatch, useSelector } from "react-redux";
 import { Button, Navbar, Alignment, Icon } from "@blueprintjs/core";
-import "normalize.css";
-import "@blueprintjs/core/lib/css/blueprint.css";
-import "@blueprintjs/icons/lib/css/blueprint-icons.css";
 import styles from "./NavMahjong.module.scss";
 
 const NavMahjong: React.FC = () => {
@@ -16,6 +13,13 @@ const NavMahjong: React.FC = () => {
         <Navbar.Heading>Mahjong</Navbar.Heading>
         <Navbar.Divider />
         <span className="bp3-tag .modifier">v0.5.0</span>
+        <Navbar.Divider />
+        <div className="bp3-select .modifier">
+          <select>
+            <option selected>English</option>
+            <option value="1">Simplified Chinese</option>
+          </select>
+        </div>
       </Navbar.Group>
       <Navbar.Group align={Alignment.RIGHT}>
         <div className="bp3-input-group .modifier">
